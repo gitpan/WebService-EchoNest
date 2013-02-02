@@ -5,7 +5,7 @@ use JSON::XS::VersionOneAndTwo;
 use LWP::UserAgent;
 use URI::QueryParam;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 has 'api_key' => (
   is       => 'rw',
