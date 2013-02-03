@@ -11,7 +11,9 @@ use ExtUtils::MakeMaker 6.30;
 my %WriteMakefileArgs = (
   "ABSTRACT" => "A simple interface to the EchoNest API",
   "AUTHOR" => "Nick Langridge <nickl\@cpan.org>",
-  "BUILD_REQUIRES" => {},
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
+  },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
   },
@@ -19,8 +21,14 @@ my %WriteMakefileArgs = (
   "EXE_FILES" => [],
   "LICENSE" => "perl",
   "NAME" => "WebService::EchoNest",
-  "PREREQ_PM" => {},
-  "VERSION" => "0.004",
+  "PREREQ_PM" => {
+    "JSON::XS::VersionOneAndTwo" => 0,
+    "LWP::UserAgent" => 0,
+    "Moose" => 0,
+    "MooseX::StrictConstructor" => 0,
+    "URI::QueryParam" => 0
+  },
+  "VERSION" => "0.005",
   "test" => {
     "TESTS" => "t/*.t"
   }
