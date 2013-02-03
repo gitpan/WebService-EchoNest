@@ -24,4 +24,4 @@ requires:
   URI::QueryParam: 0
 resources:
   repository: https://github.com/nicklangridge/WebService-EchoNest
-version: 0.006
+version: 0.007

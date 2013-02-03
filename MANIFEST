@@ -4,7 +4,6 @@ MANIFEST
 META.yml
 Makefile.PL
 README
-README.md
 dist.ini
 lib/WebService/EchoNest.pm
 t/live.t
