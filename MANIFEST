@@ -1,12 +1,13 @@
 CHANGES
 LICENSE
 MANIFEST
-META.json
 META.yml
 Makefile.PL
 README
 README.md
 dist.ini
 lib/WebService/EchoNest.pm
+t/live.t
+t/mock.t
 t/pod.t
 t/pod_coverage.t

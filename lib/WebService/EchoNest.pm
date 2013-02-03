@@ -5,7 +5,8 @@ use JSON::XS::VersionOneAndTwo;
 use LWP::UserAgent;
 use URI::QueryParam;
 
-our $VERSION = '0.005';
+our $VERSION = '0.006';
+our $ROOT    = 'http://developer.echonest.com/api/v4/';
 
 has 'api_key' => (
   is       => 'rw',
@@ -24,8 +25,6 @@ has 'ua' => (
     return $ua;
   }
 );
-
-my $ROOT = 'http://developer.echonest.com/api/v4/';
 
 sub request {
   my ( $self, $method, %conf ) = @_;

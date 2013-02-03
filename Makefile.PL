@@ -12,7 +12,10 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "A simple interface to the EchoNest API",
   "AUTHOR" => "Nick Langridge <nickl\@cpan.org>",
   "BUILD_REQUIRES" => {
-    "Test::More" => 0
+    "Test::LWP::UserAgent" => 0,
+    "Test::More" => 0,
+    "strict" => 0,
+    "warnings" => 0
   },
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => "6.30"
@@ -28,7 +31,7 @@ my %WriteMakefileArgs = (
     "MooseX::StrictConstructor" => 0,
     "URI::QueryParam" => 0
   },
-  "VERSION" => "0.005",
+  "VERSION" => "0.006",
   "test" => {
     "TESTS" => "t/*.t"
   }
